@@ -10,7 +10,7 @@ export const Header = styled(Text)`
 export const Main = styled(Flex)`
   background-color: transparent;
   margin-left: 125px;
-  margin-right: 125px;
+  margin-right: 126px;
   margin-top: 80px;
   flex-wrap: wrap;
   flex-direction: row;

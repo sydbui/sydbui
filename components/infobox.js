@@ -1,5 +1,5 @@
 import HoverText from "./hoverfunc";
-import * as styles from "../pages/styles";
+import * as styles from "../styles/styles";
 import {  
   Flex, 
   Box, 

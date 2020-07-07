@@ -16,8 +16,7 @@ import {
   Image
 } from "@chakra-ui/core";
 import {MdArrowDownward} from "react-icons/md";
-import theme from './theme';
-import * as styles from './styles';
+import * as styles from '../styles/styles';
 import HoverText from '../components/hoverfunc';
 import InfoBox from '../components/infobox';
 

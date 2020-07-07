@@ -45,7 +45,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <ThemeProvider >
+      <ThemeProvider>
         <CSSReset config={config} />
         <styles.Main>
           <Flex>
@@ -58,7 +58,7 @@ export default function Home() {
                 <styles.Header fontFamily="Zilla Slab" as="u">Sydney Bui</styles.Header>
                 </PopoverTrigger>
                 <PopoverContent backgroundColor="transparent" border="0px">
-                    <Image src="/pics/ponyo.png" alt="Me!" />
+                    <Image src="/pics/kribz.jpg" alt="Me!" />
                 </PopoverContent>
               </Popover> is a software developer, designer, and student at UC Berkeley. 
               Her work is motivated at <styles.Header fontFamily="Zilla Slab" color="#EBC1FF" as="u">
@@ -69,7 +69,7 @@ export default function Home() {
           <styles.LeftContainter>
             <Box as={MdArrowDownward} size="100px" color="#FFCC7E"></Box>
           </styles.LeftContainter>
-          <styles.Links fontFamily="Inconsolata" >
+          <styles.Links fontFamily="Inconsolata" color="#FFCC7E">
             <Link href="mailto:sydneythibui@gmail.com">Email</Link> *  <Link href="/resume.pdf" isExternal>
             Resume</Link> * <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
           </styles.Links>
@@ -87,8 +87,8 @@ export default function Home() {
           <Flex marginTop="88px" marginLeft="126px" marginLeft="126px" width="950px" flexDirection="column">
             <styles.Header fontFamily="Zilla Slab" color="#424242" fontSize="48px">Want to work with me?</styles.Header>
             <Box height="36px" width="100%"></Box>
-            <styles.BodyText fontFamily="Inconsolata" color="gray.700">I am actively looking for internships and ready 
-            to start summer 2021. If you’d like to talk to me over a game of sudoku, get in touch!</styles.BodyText>
+            <styles.InfoText fontFamily="Inconsolata">I am actively looking for internships and ready 
+            to start summer 2021. If you’d like to talk to me over a game of sudoku, get in touch!</styles.InfoText>
             <Box height="36px" width="100%"></Box>
             <styles.Links fontFamily="Inconsolata" color="gray.700">
             <Link href="mailto:sydneythibui@gmail.com">Email</Link>  *   <Link href="/resume.pdf" isExternal>
@@ -96,7 +96,7 @@ export default function Home() {
             </styles.Links>
           </Flex>
           <Flex width = "320px" justifyContent="center" flexDirection="column">
-            <Image marginLeft="45px" rounded="full" size="225px" src="/pics/ponyo.png"/>
+            <Image marginLeft="45px" rounded="full" size="225px" src="/pics/me!.jpg"/>
           </Flex>
         </Flex>
       </ThemeProvider>

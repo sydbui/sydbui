@@ -62,7 +62,7 @@ export default function Home() {
           <styles.SubHeader fontFamily="Inconsolata" color="#B54EE5">PRODUCT DESIGN | 2 WEEKS</styles.SubHeader>
           <Box height="36px" width="100%"></Box>
           <Flex width="100%" marginBottom="24px">
-            <styles.BodyText fontFamily="Inconsolata" color="gray.700">hello</styles.BodyText>
+            <styles.BodyText fontFamily="Inconsolata" color="#424242">hello</styles.BodyText>
           </Flex>
         </styles.Main>
         <Flex height="488px" width="100%" backgroundColor="#FFCC7E">

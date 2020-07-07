@@ -19,7 +19,6 @@ export const Links = styled(Text)`
   font-size: 28px;
   font-weight: bold;
   lineHeight: 7%;
-  color: #FFCC7E;
 `
 export const LeftContainter = styled(Flex)`
   justify-content: flex-end;
@@ -36,4 +35,8 @@ export const SubHeader = styled(Text)`
 export const BodyText = styled(SubHeader)`
   font-Size: 28px;
   color: white;
+`
+
+export const InfoText = styled(SubHeader)`
+  color: #424242;
 `

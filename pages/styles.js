@@ -5,15 +5,15 @@ export const Header = styled(Text)`
   lineHeight: 160%;
   font-Size: 64px; 
   font-weight: normal;
-  color: #EBC1FF;
   width:100%;
 `
 export const Main = styled(Flex)`
   background-color: transparent;
   margin-left: 125px;
-  margin-right: 126px;
+  margin-right: 125px;
   margin-top: 80px;
   flex-wrap: wrap;
+  flex-direction: row;
 `
 export const Links = styled(Text)`
   font-size: 28px;

@@ -13,6 +13,6 @@ export default function InfoBox(props) {
       <Flex width="100%" marginBottom="24px">
         <styles.BodyText fontFamily="Inconsolata">{props.body}</styles.BodyText>
       </Flex>
-      <HoverText img="/pics/ponyo.png"></HoverText>
+      <HoverText img={props.img} link={props.link} check={props.check}></HoverText>
   </div>
 }

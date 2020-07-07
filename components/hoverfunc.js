@@ -12,19 +12,29 @@ import {
   PopoverContent,
   Image
 } from "@chakra-ui/core";
-import * as styles from '../pages/styles';
 import {MdArrowForward} from "react-icons/md";
 
 export default function HoverText(props) {
+  const external = 
+    <Link href={props.link} isExternal>
+    <Button variant="link" rightIcon={MdArrowForward} fontSize="28px" fontFamily="Inconsolata" color= "#FFCC7E">
+      Learn More
+    </Button>
+    </Link>;
+  const internal = 
+    <Link href={props.link}>
+    <Button variant="link" rightIcon={MdArrowForward} fontSize="28px" fontFamily="Inconsolata" color= "#FFCC7E">
+      Learn More
+    </Button>
+    </Link>;
+  const linker = props.check ? external : internal;
   return <div>
   <Popover trigger="hover" placement="right-end">
     <PopoverTrigger>
-      <Button variant="link" rightIcon={MdArrowForward} fontSize="28px" fontFamily="Inconsolata" color= "#FFCC7E">
-        Learn More
-      </Button>
+      {linker} 
     </PopoverTrigger>
     <PopoverContent backgroundColor="transparent" border="0px">
-      <Image src={props.img} alt="cool image" />
+      <Image src={props.img} alt="cool image"/>
     </PopoverContent>
     </Popover>
   </div>

@@ -12,12 +12,12 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  Image
+  Image,
+  Text,
 } from "@chakra-ui/core";
 import {MdArrowDownward} from "react-icons/md";
-import * as styles from '../styles/styles';
-import HoverText from '../components/hoverfunc';
 import InfoBox from '../components/infobox';
+import * as styles from '../components/customtext';
 
 const config = theme => ({
   light: {
@@ -46,32 +46,33 @@ export default function Home() {
 
       <ThemeProvider>
         <CSSReset config={config} />
-        <styles.Main>
+        <Flex background-color= "transparent" marginLeft="125px" marginRight="126px" flexWrap="wrap" flexDirection="row" marginTop="80px">
           <Flex>
-            <styles.Header fontFamily="Zilla Slab" color="#FFCC7E">*</styles.Header>
+            <styles.Header color="#FFCC7E" text="*"></styles.Header>
           </Flex>
+          <Box width="100%"></Box>
           <Flex>
-            <styles.Header fontFamily="Zilla Slab">
+            <Text fontFamily="Zilla Slab" fontSize="64px" lineHeight="160%">
               <Popover trigger="hover" placement="right-start">
                 <PopoverTrigger>
-                <styles.Header fontFamily="Zilla Slab" as="u">Sydney Bui</styles.Header>
+                <Text fontFamily="Zilla Slab" as="u">Sydney Bui</Text>
                 </PopoverTrigger>
                 <PopoverContent backgroundColor="transparent" border="0px">
                     <Image src="/pics/kribz.jpg" alt="Me!" />
                 </PopoverContent>
               </Popover> is a software developer, designer, and student at UC Berkeley. 
-              Her work is motivated at <styles.Header fontFamily="Zilla Slab" color="#EBC1FF" as="u">
+              Her work is motivated at <Text fontFamily="Zilla Slab" color="#EBC1FF" as="u">
                 <Link href="https://calblueprint.org/" isExternal>building a better world.</Link> 
-              </styles.Header> She is also very cool.
-            </styles.Header>
+              </Text> She is also very cool.
+            </Text>
           </Flex>
-          <styles.LeftContainter>
-            <Box as={MdArrowDownward} size="100px" color="#FFCC7E"></Box>
-          </styles.LeftContainter>
-          <styles.Links fontFamily="Inconsolata" color="#FFCC7E">
+          <Flex justifyContent="space-between" width="100%" marginTop="90px">
+          <Text fontFamily="Inconsolata" color="#FFCC7E" fontSize="28px">
             <Link href="mailto:sydneythibui@gmail.com">Email</Link> *  <Link href="/resume.pdf" isExternal>
             Resume</Link> * <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
-          </styles.Links>
+          </Text>
+            <Box as={MdArrowDownward} size="100px" color="#FFCC7E"></Box>
+          </Flex>
           <Box height="192px" width="100%"></Box>
           <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEER" body="Through Blueprint, a student organization 
           that develops softwares for non-profits, I worked with a team of people to create an app using React Native for 1951 Coffee, a 
@@ -81,18 +82,18 @@ export default function Home() {
           <InfoBox title="RecipeBook iOS App" subtitle="PRODUCT DESIGN" body="I designed an iOS App that allows users with 
           limited cooking knowledge to easily find a variety of new recipes through user research and design." img="/pics/ponyo.png" link="/swag" check={false}></InfoBox>
           <Box height="192px" width="100%"></Box>
-        </styles.Main>
+        </Flex>
         <Flex height="488px" width="100%" backgroundColor="#FFCC7E">
           <Flex marginTop="88px" marginLeft="126px" marginLeft="126px" width="950px" flexDirection="column">
-            <styles.Header fontFamily="Zilla Slab" color="#424242" fontSize="48px">Want to work with me?</styles.Header>
+            <styles.Title color="#424242" text="Want to work with me?"></styles.Title>
             <Box height="36px" width="100%"></Box>
-            <styles.InfoText fontFamily="Inconsolata">I am actively looking for internships and ready 
-            to start summer 2021. If you’d like to talk to me over a game of sudoku, get in touch!</styles.InfoText>
+            <styles.Subtitle color="#424242" text="I am actively looking for internships and ready 
+            to start summer 2021. If you’d like to talk to me over a game of sudoku, get in touch!"></styles.Subtitle>
             <Box height="36px" width="100%"></Box>
-            <styles.Links fontFamily="Inconsolata" color="gray.700">
+            <Text fontFamily="Inconsolata" color="#424242" fontSize="28px">
             <Link href="mailto:sydneythibui@gmail.com">Email</Link>  *   <Link href="/resume.pdf" isExternal>
             Resume</Link>  *  <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
-            </styles.Links>
+            </Text>
           </Flex>
           <Flex width = "320px" justifyContent="center" flexDirection="column">
             <Image marginLeft="45px" rounded="full" size="225px" src="/pics/me!.jpg"/>

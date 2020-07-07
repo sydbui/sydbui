@@ -1,209 +1,100 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { 
+  ThemeProvider, 
+  CSSReset, 
+  Flex, 
+  Box, 
+  Link, 
+  Button, 
+  Icon, 
+  ButtonGroup,   
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  Image
+} from "@chakra-ui/core";
+import {MdArrowDownward} from "react-icons/md";
+import theme from './theme';
+import * as styles from './styles';
+import HoverText from '../components/hoverfunc';
+import InfoBox from '../components/infobox';
+
+const config = theme => ({
+  light: {
+    color: theme.colors.gray[700],
+    bg: "#1A6D54",
+    borderColor: theme.colors.gray[200],
+    placeholderColor: theme.colors.gray[500]
+  },
+  dark: {
+    color: theme.colors.whiteAlpha[900],
+    bg: theme.colors.gray[800],
+    borderColor: theme.colors.whiteAlpha[300],
+    placeholderColor: theme.colors.whiteAlpha[400]
+  }
+});
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>syd's site</title>
+        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+      <ThemeProvider >
+        <CSSReset config={config} />
+        <styles.Main>
+          <Flex>
+            <styles.Header fontFamily="Zilla Slab" color="#FFCC7E">*</styles.Header>
+          </Flex>
+          <Flex>
+            <styles.Header fontFamily="Zilla Slab">
+              <Popover trigger="hover" placement="right-start">
+                <PopoverTrigger>
+                <styles.Header fontFamily="Zilla Slab" as="u">Sydney Bui</styles.Header>
+                </PopoverTrigger>
+                <PopoverContent backgroundColor="transparent" border="0px">
+                    <Image src="/pics/ponyo.png" alt="Me!" />
+                </PopoverContent>
+              </Popover> is a software developer, designer, and student at UC Berkeley. 
+              Her work is motivated at <styles.Header fontFamily="Zilla Slab" color="#EBC1FF" as="u">
+                <Link href="https://calblueprint.org/" isExternal>building a better world.</Link> 
+              </styles.Header> She is also very cool.
+            </styles.Header>
+          </Flex>
+          <styles.LeftContainter>
+            <Box as={MdArrowDownward} size="100px" color="#FFCC7E"></Box>
+          </styles.LeftContainter>
+          <styles.Links fontFamily="Inconsolata" >
+            <Link href="https://chakra-ui.com">Email</Link> *  <Link href="https://chakra-ui.com">
+            Resume</Link> * <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
+          </styles.Links>
+          <Box height="192px" width="100%"></Box>
+          <InfoBox title="1951 Coffee iOS App" subtitle="SOFTWARE ENGINEER" body="hehe"></InfoBox>
+          <Box height="64px" width="100%"></Box>
+          <InfoBox title="RecipeBook iOS App" subtitle="PRODUCT DESIGN" body="hehe"></InfoBox>
+          <Box height="192px" width="100%"></Box>
+        </styles.Main>
+        <Flex height="488px" width="100%" backgroundColor="#FFCC7E">
+          <Flex marginTop="88px" marginLeft="126px" marginLeft="126px" width="950px" flexDirection="column">
+            <styles.Header fontFamily="Zilla Slab" color="#424242" fontSize="48px">Want to work with me?</styles.Header>
+            <Box height="36px" width="100%"></Box>
+            <styles.BodyText fontFamily="Inconsolata" color="#424242">I am actively looking for internships and ready 
+            to start summer 2021. If you’d like to talk to me over a game of sudoku, get in touch!</styles.BodyText>
+            <Box height="36px" width="100%"></Box>
+            <styles.Links fontFamily="Inconsolata" color="#424242">
+            <Link href="https://chakra-ui.com">Email</Link>  *   <Link href="https://chakra-ui.com">
+            Resume</Link>  *  <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
+            </styles.Links>
+          </Flex>
+          <Flex width = "320px" justifyContent="center" flexDirection="column">
+            <Image marginLeft="50px" rounded="full" size="225px" src="/pics/ponyo.png"/>
+          </Flex>
+        </Flex>
+      </ThemeProvider>
     </div>
   )
 }

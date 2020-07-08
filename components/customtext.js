@@ -20,9 +20,15 @@ export function Subtitle(props) {
   )
 }
 
+export function Description(props) {
+  return (
+    <Text fontFamily="Inconsolata" color={props.color} fontSize="24px" lineHeight="150%" letterSpacing="1px">{props.text}</Text>
+  )
+}
+
 export function Underline(props) {
   return (
-    <Text fontFamily="Inconsolata" color={props.color} fontSize="24px" lineHeight="150%" letterSpacing="1px" as="u">{props.text}</Text>
+    <Text fontFamily="Inconsolata" color={props.color} fontSize="24px" lineHeight="150%" letterSpacing="1px" as="u" fontWeight="bold">{props.text}</Text>
   )
 }
 

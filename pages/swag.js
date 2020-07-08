@@ -55,36 +55,36 @@ export default function Home() {
           <Box width="100%"></Box>
           <styles.Subtitle color="#B54EE5" text="PRODUCT DESIGN | 2 WEEKS"></styles.Subtitle>
           <Box height="36px" width="100%"></Box>
-          <styles.Subtitle color="#424242" text="RecipeBook is an iOS App I designed to allow users to easily find a 
-          variety of dishes to cook. The skills used include UI Design, UX reseach, and Visual Design"></styles.Subtitle>
+          <styles.Description color="#424242" text="RecipeBook is an iOS App I designed to allow users to easily find a 
+          variety of dishes to cook. The skills used include UI Design, UX reseach, and Visual Design"></styles.Description>
           <Box height="50px" width="100%"></Box>
           <styles.Subtitle color="#B54EE5" text="USER RESEARCH TACTICS"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
-          <styles.Subtitle color="#424242" text="Through conducting multiple interviews with siblings and 
+          <styles.Description color="#424242" text="Through conducting multiple interviews with siblings and 
           friends with skills ranging from vast cooking experience to none, I was able to learn about their 
           experiences with cooking. I was also able to identify potential problem areas and key insights through 
-          additional reading and research."></styles.Subtitle>
+          additional reading and research."></styles.Description>
           <Box height="60px" width="100%"></Box>
           <styles.Subtitle color="#B54EE5" text="KEY TAKE AWAYS"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
           <styles.Underline color="#424242" text="TIME CONSTRAINTS"></styles.Underline>
-          <styles.Subtitle color="#424242" text="Along with yummy recipes and dishes, people 
-          prefer for cooking to be quick and time efficient (typically 20 mins)"></styles.Subtitle>
+          <styles.Description color="#424242" text="Along with yummy recipes and dishes, people 
+          prefer for cooking to be quick and time efficient (typically 20 mins)"></styles.Description>
           <Box width="100%" height="15px"></Box>
           <styles.Underline color="#424242" text="HEALTH CONCERNS"></styles.Underline>
-          <styles.Subtitle color="#424242" text="People prefer healthy recipes as they are more 
-          conscious of what they eat when cooking as they see all ingredients that go into the dish."></styles.Subtitle>
+          <styles.Description color="#424242" text="People prefer healthy recipes as they are more 
+          conscious of what they eat when cooking as they see all ingredients that go into the dish."></styles.Description>
           <Box width="100%" height="15px"></Box>
           <styles.Underline color="#424242" text="VARIETY"></styles.Underline>
-          <styles.Subtitle color="#424242" text="When it comes to cooking, people feel restricted by both their skill set 
+          <styles.Description color="#424242" text="When it comes to cooking, people feel restricted by both their skill set 
           and options of what they know how to cook. RecipeBook’s goal is to recommend new and welcoming recipes to widen 
-          one’s skill."></styles.Subtitle>
+          one’s skill."></styles.Description>
           <Box width="100%" height="60px"></Box>
           <styles.Subtitle color="#B54EE5" text="THE PROBLEM"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
           <styles.Underline color="#424242" text="CUSTOMIZATION"></styles.Underline>
-          <styles.Subtitle color="#424242" text="Each person has specific dietary preferences and restrictions that 
-          make it difficult to chose what to cook."></styles.Subtitle>
+          <styles.Description color="#424242" text="Each person has specific dietary preferences and restrictions that 
+          make it difficult to chose what to cook."></styles.Description>
           <Box width="100%" height="60px"></Box>
           <styles.Subtitle color="#B54EE5" text="SKETCHES & MOCK-UPS"></styles.Subtitle>
           <Image src="/pics/sketches.jpg" marginTop="24px" ></Image>
@@ -96,18 +96,18 @@ export default function Home() {
           <Image src="/pics/structure.png" marginTop="24px" marginLeft="20px" marginBottom="60px"></Image>
           <styles.Subtitle color="#B54EE5" text="DESIGN DECISION: USER ACCESSIBILITY"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
-          <styles.Subtitle color="#424242" text="For the search tab, I weighed the pros and cons of having a 3-column 
+          <styles.Description color="#424242" text="For the search tab, I weighed the pros and cons of having a 3-column 
           grid or a 2-column grid to showcase the categories of recipes. Taking into consideration user accessibility 
           and effective visual design, the 2-column grid presents a clearer, simpler, and more accessible display of 
-          the categories."></styles.Subtitle>
+          the categories."></styles.Description>
           <Image src="/pics/comp.png" marginTop="24px"  marginBottom="60px"></Image>
           <styles.Subtitle color="#B54EE5" text="VISUAL DESIGN: COLOR PALETTE"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
           <Flex width="100%" height="100%">
             <Flex width="775px">
-              <styles.Subtitle color="#424242" text="The color palette I chose highlights orange and yellow tones because 
+              <styles.Description color="#424242" text="The color palette I chose highlights orange and yellow tones because 
               research shows that orange and yellow colors make people hungry which is ideal when looking for a recipe to 
-              cook, increasing user usage and engagement"></styles.Subtitle>
+              cook, increasing user usage and engagement"></styles.Description>
             </Flex>
             <Image src="/pics/colors.png" marginTop="24px" marginLeft="20px" marginBottom="60px" size="30%"></Image>
           </Flex>
@@ -149,9 +149,9 @@ export default function Home() {
           </Flex>
           <styles.Subtitle color="#B54EE5" text="MOVING FORWARD"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
-          <styles.Subtitle color="#424242" text="This project allowed me to explore user design interactions on digital platforms. 
+          <styles.Description color="#424242" text="This project allowed me to explore user design interactions on digital platforms. 
           Moving forward, this project is still a work in progress and I intend to conduct further research to maximize user 
-          experience and interaction"></styles.Subtitle>
+          experience and interaction"></styles.Description>
           <Box height="200px" width="100%"></Box>
         </Flex>
         <Flex width="100%" backgroundColor="#FFCC7E">

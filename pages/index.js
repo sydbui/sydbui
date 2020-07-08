@@ -80,7 +80,7 @@ export default function Home() {
           that develops softwares for non-profits, I worked with a team of people to create an app using React Native for 1951 Coffee, a 
           local Berkeley non-profit focused towards advancing the well-being of the refugee community." img="/pics/1951.jpg" 
           link="https://apps.apple.com/us/app/1951-coffee-trainee/id1496686726" check={true} ></InfoBox>
-          <Box height="64px" width="100%"></Box>
+          <Box height="128px" width="100%"></Box>
           <InfoBox title="RecipeBook iOS App" subtitle="PRODUCT DESIGN" body="I designed an iOS App that allows users with 
           limited cooking knowledge to easily find a variety of new recipes through user research and design." img="/pics/ponyo.png" link="/swag" check={false}></InfoBox>
           <Box height="192px" width="100%"></Box>
@@ -97,7 +97,7 @@ export default function Home() {
             Resume</Link>  *  <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
             </Text>
           </Flex>
-          <Image marginLeft="45px" rounded="full" size="225px" src="/pics/me!.jpg" display="flex" marginTop="130px" marginRight="100px"/>
+          <Image marginLeft="64px" rounded="full" size="225px" src="/pics/me!.jpg" display="flex" marginTop="130px" marginRight="100px"/>
         </Flex>
       </ThemeProvider>
     </div>

@@ -8,9 +8,10 @@ import {
   Link, 
   Text,
   Tooltip,
-  Image
+  Image,
+  Button
 } from "@chakra-ui/core";
-import {MdArrowDownward} from "react-icons/md";
+import {MdArrowBack} from "react-icons/md";
 import * as styles from '../components/customtext';
 import HoverText from '../components/hoverfunc';
 import InfoBox from '../components/infobox';
@@ -152,7 +153,12 @@ export default function Home() {
           <styles.Description color="#424242" text="This project allowed me to explore user design interactions on digital platforms. 
           Moving forward, this project is still a work in progress and I intend to conduct further research to maximize user 
           experience and interaction"></styles.Description>
-          <Box height="200px" width="100%"></Box>
+          <Box height="100px" width="100%"></Box>
+          <Link href="/">
+            <Button variant="link" leftIcon={MdArrowBack} fontSize="28px" fontFamily="Zilla Slab" color="#C273E7" fontWeight="normal"> 
+            Return Home</Button>
+          </Link>
+          <Box height="110px" width="100%"></Box>
         </Flex>
         <Flex width="100%" backgroundColor="#FFCC7E">
           <Flex marginTop="88px" marginLeft="126px" marginLeft="126px" width="950px" flexDirection="column" marginBottom="90px">

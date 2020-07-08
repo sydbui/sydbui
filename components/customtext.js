@@ -16,19 +16,19 @@ export function Title(props) {
 
 export function Subtitle(props) {
   return (
-    <Text fontFamily="Inconsolata" color={props.color} fontSize="28px" lineHeight="150%" letterSpacing="3px" fontWeight="bold">{props.text}</Text>
+    <Text fontFamily="Inconsolata" color={props.color} fontSize="28px" lineHeight="150%" letterSpacing="1px" fontWeight="bold">{props.text}</Text>
   )
 }
 
 export function Underline(props) {
   return (
-    <Text fontFamily="Inconsolata" color={props.color} fontSize="28px" lineHeight="150%" letterSpacing="3px" as="u">{props.text}</Text>
+    <Text fontFamily="Inconsolata" color={props.color} fontSize="28px" lineHeight="150%" letterSpacing="1px" as="u">{props.text}</Text>
   )
 }
 
 export function Caption(props) {
   return (
-    <Text fontFamily="Inconsolata" color={props.color} fontSize="20px" lineHeight="150%" letterSpacing="3px" textAlign="center">{props.text}</Text>
+    <Text fontFamily="Inconsolata" color={props.color} fontSize="20px" lineHeight="150%" letterSpacing="1px" textAlign="center">{props.text}</Text>
   )
 }
 

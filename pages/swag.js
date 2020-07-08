@@ -172,7 +172,7 @@ export default function Home() {
             Resume</Link>  *  <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
             </Text>
           </Flex>
-          <Image marginLeft="45px" rounded="full" size="225px" src="/pics/me!.jpg" display="flex" marginTop="130px" marginRight="100px"/>
+          <Image marginLeft="64px" rounded="full" size="225px" src="/pics/me!.jpg" display="flex" marginTop="130px" marginRight="100px"/>
         </Flex>
       </ThemeProvider>
     </div>

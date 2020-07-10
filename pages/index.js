@@ -17,6 +17,7 @@ import {
 } from "@chakra-ui/core";
 import {BsArrowDown} from "react-icons/bs";
 import InfoBox from '../components/infobox';
+import HoverText from '../components/hoverfunc';
 import * as styles from '../components/customtext';
 
 const config = theme => ({
@@ -61,9 +62,16 @@ export default function Home() {
                     <Image src="/pics/kribz.jpg" alt="Me!" />
                 </PopoverContent>
               </Popover> is a software developer, designer, and student at UC Berkeley. 
-              Her work is motivated at <Text fontFamily="Zilla Slab" color="#EBC1FF" as="u">
-                <Link href="https://calblueprint.org/" isExternal>building a better world.</Link> 
-              </Text> She is also very cool.
+              Her work is motivated towards <Popover trigger="hover" placement="left-end">
+                <PopoverTrigger>
+                  <Text fontFamily="Zilla Slab" color="#EBC1FF" as="u">
+                    <Link href="https://calblueprint.org/" isExternal>building a better world.</Link>
+                  </Text>
+                </PopoverTrigger>
+                <PopoverContent backgroundColor="transparent" border="0px">
+                  <Image src="/pics/blueprint.JPEG" alt="cool image"/>
+                </PopoverContent>
+              </Popover> She is also pretty cool.
             </Text>
           </Flex>
           <Flex justifyContent="space-between" width="100%">
@@ -79,7 +87,7 @@ export default function Home() {
           <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING" body="Through Blueprint, a student organization 
           that develops softwares for non-profits, I worked with a team of people to create an app using React Native for 1951 Coffee, a 
           local Berkeley non-profit focused towards advancing the well-being of the refugee community." img="/pics/1951.jpg" 
-          link="https://apps.apple.com/us/app/1951-coffee-trainee/id1496686726" check={true} ></InfoBox>
+          link="https://apps.apple.com/us/app/1951-coffee-trainee/id1496686726" check={true} text = "Learn More" font="Inconsolata" size="28px" color="#FFCC7E"></InfoBox>
           <Box height="128px" width="100%"></Box>
           <InfoBox title="RecipeBook iOS App" subtitle="PRODUCT DESIGN" body="I designed an iOS App that allows users with 
           limited cooking knowledge to easily find a variety of new recipes through user research and design." img="/pics/ponyo.png" link="/swag" check={false}></InfoBox>

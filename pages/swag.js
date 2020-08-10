@@ -160,19 +160,19 @@ export default function Home() {
           </Link>
           <Box height="110px" width="100%"></Box>
         </Flex>
-        <Flex width="100%" backgroundColor="#FFCC7E">
-          <Flex marginTop="88px" marginLeft="126px" marginLeft="126px" width="950px" flexDirection="column" marginBottom="90px">
+        <Flex width="100%" backgroundColor="#FFCC7E" flexDirection={["column", "column", "row", "row"]}>
+          <Flex marginTop="88px" paddingLeft={["48px", "48px", "125px", "125px"]} paddingRight={["48px", "48px", "125px", "125px"]} width={["100%","100%","950px","950px"]} flexDirection="column">
             <styles.Title color="#424242" text="Want to work with me?"></styles.Title>
             <Box height="36px" width="100%"></Box>
             <styles.Subtitle color="#424242" text="I am actively looking for internships and ready 
             to start summer 2021. If you’d like to talk to me over a game of sudoku, get in touch!"></styles.Subtitle>
             <Box height="36px" width="100%"></Box>
-            <Text fontFamily="Inconsolata" color="#424242" fontSize="28px" fontWeight="700">
+            <Text fontFamily="Inconsolata" color="#424242" fontSize={["14px", "14px", "28px", "28px"]} fontWeight="700">
             <Link href="mailto:sydneythibui@gmail.com">Email</Link>  *   <Link href="/resume.pdf" isExternal>
             Resume</Link>  *  <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
             </Text>
           </Flex>
-          <Image marginLeft="64px" rounded="full" size="225px" src="/pics/me!.jpg" display="flex" marginTop="130px" marginRight="100px"/>
+          <Image marginLeft="7%" marginBottom="8%"rounded="full" size= {["125px", "125px", "225px", "225px"]}  src="/pics/me!.jpg" display="flex" marginTop="9%" marginRight="2%"/>
         </Flex>
       </ThemeProvider>
     </div>

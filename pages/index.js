@@ -14,6 +14,7 @@ import {
   PopoverContent,
   Image,
   Text,
+  Heading,
 } from "@chakra-ui/core";
 import {BsArrowDown} from "react-icons/bs";
 import InfoBox from '../components/infobox';
@@ -43,17 +44,18 @@ export default function Home() {
         <title>syd's site</title>
         <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet"></link>
+        <link rel="icon" type="image/png" href="/pics/ponyo.png" />
       </Head>
 
       <ThemeProvider>
         <CSSReset config={config} />
-        <Flex background-color= "transparent" marginLeft="125px" marginRight="126px" flexWrap="wrap" flexDirection="row" marginTop="80px">
+        <Flex background-color= "transparent" marginLeft={["48px", "48px", "125px", "125px"]} marginRight={["48px", "48px", "125px", "125px"]} flexWrap="wrap" flexDirection="row" marginTop="80px">
           <Flex>
             <styles.Header color="#FFCC7E" text="*"></styles.Header>
           </Flex>
           <Box width="100%"></Box>
           <Flex>
-            <Text fontFamily="Zilla Slab" fontSize="64px" lineHeight="160%">
+            <Heading fontFamily="Zilla Slab" fontSize={["32px", "32px", "64px","64px"]} fontWeight="regular" lineHeight="160%">
               <Popover trigger="hover" placement="right-start">
                 <PopoverTrigger>
                 <Text fontFamily="Zilla Slab" as="u">Sydney Bui</Text>
@@ -72,16 +74,16 @@ export default function Home() {
                   <Image src="/pics/blueprint.JPEG" alt="cool image"/>
                 </PopoverContent>
               </Popover> She is also pretty cool.
-            </Text>
+            </Heading>
           </Flex>
           <Flex justifyContent="space-between" width="100%">
             <Flex marginTop="90px">
-              <Text fontFamily="Inconsolata" color="#FFCC7E" fontSize="28px">
+              <Text fontFamily="Inconsolata" color="#FFCC7E" fontSize={["20px", "20px", "28px", "28px"]}>
               <Link href="mailto:sydneythibui@gmail.com">Email</Link> *  <Link href="/resume.pdf" isExternal>
               Resume</Link> * <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
               </Text>
             </Flex>
-            <Box as={BsArrowDown} size="150px" color="#FFCC7E"></Box>
+            <Box as={BsArrowDown} size={["75px", "75px", "150px", "150px"]} color="#FFCC7E"></Box>
           </Flex>
           <Box height="192px" width="100%"></Box>
           <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING" body="Through Blueprint, a student organization 
@@ -93,19 +95,19 @@ export default function Home() {
           limited cooking knowledge to easily find a variety of new recipes through user research and design." img="/pics/ponyo.png" link="/swag" check={false}></InfoBox>
           <Box height="192px" width="100%"></Box>
         </Flex>
-        <Flex width="100%" backgroundColor="#FFCC7E">
-          <Flex marginTop="88px" marginLeft="126px" marginLeft="126px" width="950px" flexDirection="column" marginBottom="90px">
+        <Flex width="100%" backgroundColor="#FFCC7E" flexDirection={["column", "column", "row", "row"]}>
+          <Flex marginTop="88px" paddingLeft={["48px", "48px", "125px", "125px"]} paddingRight={["48px", "48px", "125px", "125px"]} width={["100%","100%","950px","950px"]} flexDirection="column">
             <styles.Title color="#424242" text="Want to work with me?"></styles.Title>
             <Box height="36px" width="100%"></Box>
             <styles.Subtitle color="#424242" text="I am actively looking for internships and ready 
             to start summer 2021. If you’d like to talk to me over a game of sudoku, get in touch!"></styles.Subtitle>
             <Box height="36px" width="100%"></Box>
-            <Text fontFamily="Inconsolata" color="#424242" fontSize="28px" fontWeight="700">
+            <Text fontFamily="Inconsolata" color="#424242" fontSize={["14px", "14px", "28px", "28px"]} fontWeight="700">
             <Link href="mailto:sydneythibui@gmail.com">Email</Link>  *   <Link href="/resume.pdf" isExternal>
             Resume</Link>  *  <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
             </Text>
           </Flex>
-          <Image marginLeft="64px" rounded="full" size="225px" src="/pics/me!.jpg" display="flex" marginTop="130px" marginRight="100px"/>
+          <Image marginLeft="7%" marginBottom="8%"rounded="full" size= {["125px", "125px", "225px", "225px"]}  src="/pics/me!.jpg" display="flex" marginTop="9%" marginRight="2%"/>
         </Flex>
       </ThemeProvider>
     </div>

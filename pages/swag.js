@@ -114,20 +114,20 @@ export default function Home() {
           </Flex>
           <styles.Subtitle color="#B54EE5" text="PROTOTYPES & HI FIDELITY MOCKUPS"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
-          <Flex flexDirection="row" width="100%" justifyContent="space-between" marginBottom="5px">
+          <Flex flexDirection="row" width="100%" justifyContent="space-between" marginBottom="15px">
             <Flex width="100%" justifyContent="center" flexWrap="wrap">
               <styles.Underline color="#424242" text="BROWSING RECIPES"></styles.Underline>
-              <Image src="/pics/browsing.gif" marginTop="20px"size="95%"></Image>
+              <Image src="/pics/browsing.gif" marginTop="25px"size="95%"></Image>
             </Flex>
             <Flex width="20%"></Flex>
             <Flex width="100%" justifyContent="center" flexWrap="wrap">
               <styles.Underline color="#424242" text="SEARCH RECIPES"></styles.Underline>
-              <Image src="/pics/search.gif" marginTop="20px"size="95%"></Image>
+              <Image src="/pics/search.gif" marginTop="25px"size="95%"></Image>
             </Flex>
             <Flex width="20%"></Flex>
             <Flex width="100%" justifyContent="center" flexWrap="wrap">
               <styles.Underline color="#424242" text="SAVING RECIPES"></styles.Underline>
-              <Image src="/pics/saved.gif" marginTop="20px"size="95%"></Image>
+              <Image src="/pics/saved.gif" marginTop="25px"size="95%"></Image>
             </Flex>
           </Flex>
           <Box width="100%" height="15px"></Box>

@@ -40,6 +40,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"></link>
+        <link rel="icon" type="image/png" href="/pics/_.png" />
       </Head>
 
       <ThemeProvider >

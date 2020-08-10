@@ -94,7 +94,7 @@ export default function Home() {
           categories."></styles.Caption>
           <Box width="100%" height="60px"></Box>
           <styles.Subtitle color="#B54EE5" text="PRODUCT STRUCTURE"></styles.Subtitle>
-          <Image src="/pics/structure.png" marginTop="24px" marginLeft="20px" marginBottom="60px" size={["75%","75%","100%","100%"]}></Image>
+          <Image src="/pics/structure.png" marginTop="24px" marginLeft="20px" marginBottom="60px" size="100%"></Image>
           <styles.Subtitle color="#B54EE5" text="DESIGN DECISION: USER ACCESSIBILITY"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
           <styles.Description color="#424242" text="For the search tab, I weighed the pros and cons of having a 3-column 
@@ -117,32 +117,33 @@ export default function Home() {
           <Flex flexDirection="row" width="100%" justifyContent="space-between">
             <Flex width="100%" justifyContent="center" flexWrap="wrap">
               <styles.Underline color="#424242" text="BROWSING RECIPES"></styles.Underline>
-              <Image src="/pics/browsing.gif" marginTop="20px" marginBottom="20%"size="90%"></Image>
+              <Image src="/pics/browsing.gif" marginTop="20px"size="95%"></Image>
             </Flex>
             <Flex width="20%"></Flex>
             <Flex width="100%" justifyContent="center" flexWrap="wrap">
               <styles.Underline color="#424242" text="SEARCH RECIPES"></styles.Underline>
-              <Image src="/pics/search.gif" marginTop="20px"marginBottom="20%"size="90%"></Image>
+              <Image src="/pics/search.gif" marginTop="20px"size="95%"></Image>
             </Flex>
             <Flex width="20%"></Flex>
             <Flex width="100%" justifyContent="center" flexWrap="wrap">
               <styles.Underline color="#424242" text="SAVING RECIPES"></styles.Underline>
-              <Image src="/pics/saved.gif" marginTop="20px" marginBottom="20%"size="90%"></Image>
+              <Image src="/pics/saved.gif" marginTop="20px"size="95%"></Image>
             </Flex>
           </Flex>
+          <Box width="100%" height="10px"></Box>
           <Flex flexDirection="row" width="100%" justifyContent="space-between" marginBottom="70px">
-            <Flex width="100%" justifyContent="center" flexWrap="wrap">
+            <Flex width="100%" justifyContent="center" flexWrap="wrap" marginTop="5%">
               <styles.Caption color="#424242" text="Users can scroll through recommended categories, and the recipe previews 
               allow users to see cooking time, difficulty, servings, and ratings."></styles.Caption>
             </Flex>
             <Flex width="20%"></Flex>
-            <Flex width="100%" justifyContent="center" flexWrap="wrap">
+            <Flex width="100%" justifyContent="center" flexWrap="wrap" marginTop="5%">
               <styles.Caption color="#424242" text="Upon clicking on a category, users will be taken 
               to a new page with countless fitting recipes to choose from as well as addtional information 
               about them."></styles.Caption>
             </Flex>
             <Flex width="20%"></Flex>
-            <Flex width="100%" justifyContent="center" flexWrap="wrap">
+            <Flex width="100%" justifyContent="center" flexWrap="wrap" marginTop="5%">
               <styles.Caption color="#424242" text="If a user wants to save a recipe they can simply press the black 
               outlined bookmark on the top right corner of the recipe. The bookmark will then be filled and 
               the saved recipes can be accessed through the “Saved” tab."></styles.Caption>

@@ -114,7 +114,7 @@ export default function Home() {
           </Flex>
           <styles.Subtitle color="#B54EE5" text="PROTOTYPES & HI FIDELITY MOCKUPS"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
-          <Flex flexDirection="row" width="100%" justifyContent="space-between">
+          <Flex flexDirection="row" width="100%" justifyContent="space-between" marginBottom="5px">
             <Flex width="100%" justifyContent="center" flexWrap="wrap">
               <styles.Underline color="#424242" text="BROWSING RECIPES"></styles.Underline>
               <Image src="/pics/browsing.gif" marginTop="20px"size="95%"></Image>
@@ -130,7 +130,7 @@ export default function Home() {
               <Image src="/pics/saved.gif" marginTop="20px"size="95%"></Image>
             </Flex>
           </Flex>
-          <Box width="100%" height="10px"></Box>
+          <Box width="100%" height="15px"></Box>
           <Flex flexDirection="row" width="100%" justifyContent="space-between" marginBottom="70px">
             <Flex width="100%" justifyContent="center" flexWrap="wrap" marginTop="5%">
               <styles.Caption color="#424242" text="Users can scroll through recommended categories, and the recipe previews 
@@ -156,7 +156,7 @@ export default function Home() {
           experience and interaction"></styles.Description>
           <Box height="100px" width="100%"></Box>
           <Link href="/">
-            <Button variant="link" leftIcon={MdArrowBack} fontSize="28px" fontFamily="Zilla Slab" color="#C273E7" fontWeight="normal"> 
+            <Button variant="link" leftIcon={MdArrowBack} fontSize={["14px", "14px", "28px", "28px"]} fontFamily="Zilla Slab" color="#C273E7" fontWeight="normal"> 
             Return Home</Button>
           </Link>
           <Box height="110px" width="100%"></Box>

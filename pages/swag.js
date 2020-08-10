@@ -88,13 +88,13 @@ export default function Home() {
           make it difficult to chose what to cook."></styles.Description>
           <Box width="100%" height="60px"></Box>
           <styles.Subtitle color="#B54EE5" text="SKETCHES & MOCK-UPS"></styles.Subtitle>
-          <Image src="/pics/sketches.jpg" marginTop="24px" size={["50%","50%","100%","100%"]}></Image>
+          <Image src="/pics/sketches.jpg" marginTop="24px" size="100%"></Image>
           <Box width="35px"></Box>
           <styles.Caption color="#424242" text="Sketches for Home and Search tab and information on recipe 
           categories."></styles.Caption>
           <Box width="100%" height="60px"></Box>
           <styles.Subtitle color="#B54EE5" text="PRODUCT STRUCTURE"></styles.Subtitle>
-          <Image src="/pics/structure.png" marginTop="24px" marginLeft="20px" marginBottom="60px" size={["50%","50%","100%","100%"]}></Image>
+          <Image src="/pics/structure.png" marginTop="24px" marginLeft="20px" marginBottom="60px" size={["75%","75%","100%","100%"]}></Image>
           <styles.Subtitle color="#B54EE5" text="DESIGN DECISION: USER ACCESSIBILITY"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
           <styles.Description color="#424242" text="For the search tab, I weighed the pros and cons of having a 3-column 
@@ -117,17 +117,17 @@ export default function Home() {
           <Flex flexDirection="row" width="100%" justifyContent="space-between">
             <Flex width="100%" justifyContent="center" flexWrap="wrap">
               <styles.Underline color="#424242" text="BROWSING RECIPES"></styles.Underline>
-              <Image src="/pics/browsing.gif" marginTop="20px" marginBottom="20px"></Image>
+              <Image src="/pics/browsing.gif" marginTop="20px" marginBottom="20%"size="90%"></Image>
             </Flex>
             <Flex width="20%"></Flex>
             <Flex width="100%" justifyContent="center" flexWrap="wrap">
               <styles.Underline color="#424242" text="SEARCH RECIPES"></styles.Underline>
-              <Image src="/pics/search.gif" marginTop="20px"marginBottom="20px"></Image>
+              <Image src="/pics/search.gif" marginTop="20px"marginBottom="20%"size="90%"></Image>
             </Flex>
             <Flex width="20%"></Flex>
             <Flex width="100%" justifyContent="center" flexWrap="wrap">
               <styles.Underline color="#424242" text="SAVING RECIPES"></styles.Underline>
-              <Image src="/pics/saved.gif" marginTop="20px" marginBottom="20px"></Image>
+              <Image src="/pics/saved.gif" marginTop="20px" marginBottom="20%"size="90%"></Image>
             </Flex>
           </Flex>
           <Flex flexDirection="row" width="100%" justifyContent="space-between" marginBottom="70px">

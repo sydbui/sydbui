@@ -44,7 +44,7 @@ export default function Home() {
 
       <ThemeProvider >
         <CSSReset config={config} />
-        <Flex background-color= "transparent" marginLeft="125px" marginRight="126px" flexWrap="wrap" flexDirection="row" marginTop="80px">
+        <Flex background-color= "transparent" marginLeft={["48px", "48px", "125px", "125px"]} marginRight={["48px", "48px", "125px", "125px"]} flexWrap="wrap" flexDirection="row" marginTop="80px">
           <Tooltip label="Return Home" placement="right" backgroundColor="transparent" color="#C273E7" 
             shadow="none" fontFamily="Zilla Slab" fontSize="28px">
             <Flex>
@@ -88,20 +88,20 @@ export default function Home() {
           make it difficult to chose what to cook."></styles.Description>
           <Box width="100%" height="60px"></Box>
           <styles.Subtitle color="#B54EE5" text="SKETCHES & MOCK-UPS"></styles.Subtitle>
-          <Image src="/pics/sketches.jpg" marginTop="24px" ></Image>
+          <Image src="/pics/sketches.jpg" marginTop="24px" size={["50%","50%","100%","100%"]}></Image>
           <Box width="35px"></Box>
           <styles.Caption color="#424242" text="Sketches for Home and Search tab and information on recipe 
           categories."></styles.Caption>
           <Box width="100%" height="60px"></Box>
           <styles.Subtitle color="#B54EE5" text="PRODUCT STRUCTURE"></styles.Subtitle>
-          <Image src="/pics/structure.png" marginTop="24px" marginLeft="20px" marginBottom="60px"></Image>
+          <Image src="/pics/structure.png" marginTop="24px" marginLeft="20px" marginBottom="60px" size={["50%","50%","100%","100%"]}></Image>
           <styles.Subtitle color="#B54EE5" text="DESIGN DECISION: USER ACCESSIBILITY"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
           <styles.Description color="#424242" text="For the search tab, I weighed the pros and cons of having a 3-column 
           grid or a 2-column grid to showcase the categories of recipes. Taking into consideration user accessibility 
           and effective visual design, the 2-column grid presents a clearer, simpler, and more accessible display of 
           the categories."></styles.Description>
-          <Image src="/pics/comp.png" marginTop="24px"  marginBottom="60px"></Image>
+          <Image src="/pics/comp.png" marginTop="24px" size={["50%","50%","100%","100%"]} marginBottom="60px" width="100%"></Image>
           <styles.Subtitle color="#B54EE5" text="VISUAL DESIGN: COLOR PALETTE"></styles.Subtitle>
           <Box height="24px" width="100%"></Box>
           <Flex width="100%" height="100%">

@@ -64,7 +64,7 @@ export default function Home() {
                     <Image src="/pics/kribz.jpg" alt="Me!" />
                 </PopoverContent>
               </Popover> is a software developer, designer, and student at UC Berkeley. 
-              Her work is motivated towards <Popover trigger="hover" placement="left-end">
+              Her work is geared towards <Popover trigger="hover" placement="left-end">
                 <PopoverTrigger>
                   <Text fontFamily="Zilla Slab" color="#EBC1FF" as="u">
                     <Link href="https://calblueprint.org/" isExternal>building a better world.</Link>

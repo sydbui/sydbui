@@ -163,7 +163,7 @@ export default function Home() {
           <Box height="110px" width="100%"></Box>
         </Flex>
         <Flex width="100%" backgroundColor="#FFCC7E" flexDirection={["column", "column", "row", "row"]}>
-          <Flex marginTop="88px" paddingLeft={["48px", "48px", "125px", "125px"]} paddingRight={["48px", "48px", "125px", "125px"]} width={["100%","100%","950px","950px"]} flexDirection="column">
+          <Flex marginTop="88px" paddingLeft={["48px", "48px", "125px", "125px"]} paddingRight={["48px", "48px", "125px", "125px"]} width={["100%","100%","1000px","1000px"]} flexDirection="column">
             <styles.Title color="#424242" text="Want to work with me?"></styles.Title>
             <Box height="36px" width="100%"></Box>
             <styles.Subtitle color="#424242" text="I am actively looking for internships and ready 
@@ -174,7 +174,7 @@ export default function Home() {
             Resume</Link>  *  <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
             </Text>
           </Flex>
-          <Image marginLeft="7%" marginBottom="8%"rounded="full" size= {["125px", "125px", "225px", "225px"]}  src="/pics/me!.jpg" display="flex" marginTop="9%" marginRight="2%"/>
+          <Image marginLeft="4%" marginBottom="8%"rounded="full" size= {["125px", "125px", "225px", "225px"]}  src="/pics/me!.jpg" display="flex" marginTop="9%" marginRight="2%"/>
         </Flex>
       </ThemeProvider>
     </div>

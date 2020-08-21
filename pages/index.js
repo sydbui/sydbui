@@ -86,10 +86,9 @@ export default function Home() {
             <Box as={BsArrowDown} size={["75px", "75px", "150px", "150px"]} color="#FFCC7E"></Box>
           </Flex>
           <Box height="192px" width="100%"></Box>
-          <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING" body="Through Blueprint, a student organization 
-          that develops softwares for non-profits, I worked with a team of people to create an app using React Native for 1951 Coffee, a 
-          local Berkeley non-profit focused towards advancing the well-being of the refugee community." img="/pics/1951.jpg" 
-          link="https://apps.apple.com/us/app/1951-coffee-trainee/id1496686726" check={true} text = "Learn More" font="Inconsolata" size="28px" color="#FFCC7E"></InfoBox>
+          <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING" body="I worked with a team of 6 people to create an app using React Native for 1951 Coffee, a 
+          local Berkeley non-profit focused towards advancing the well-being of the refugee community, that allows them to better commuicate with their trainees." img="/pics/1951.jpg" 
+          link="https://github.com/calblueprint/1951coffee" check={true} text = "Learn More" font="Inconsolata" size="28px" color="#FFCC7E"></InfoBox>
           <Box height="128px" width="100%"></Box>
           <InfoBox title="RecipeBook iOS App" subtitle="PRODUCT DESIGN" body="I designed an iOS App that allows users with 
           limited cooking knowledge to easily find a variety of new recipes through user research and design." img="/pics/recipepic.png" link="/swag" check={false}></InfoBox>

@@ -14,6 +14,6 @@ export default function InfoBox(props) {
       <Flex width="100%" marginBottom="24px">
         <styles.Subtitle color="white" text ={props.body}></styles.Subtitle>
       </Flex>
-      <HoverText img={props.img} link={props.link} check={props.check}></HoverText>
+      <HoverText img={props.img} link={props.link} check={props.check} github={props.github} placement={props.placement}></HoverText>
   </div>
 }

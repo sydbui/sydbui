@@ -86,12 +86,12 @@ export default function Home() {
             <Box as={BsArrowDown} size={["75px", "75px", "150px", "150px"]} color="#FFCC7E"></Box>
           </Flex>
           <Box height="192px" width="100%"></Box>
-          <InfoBox title="Trivia Game Website" subtitle="SOFTWARE ENGINEERING" body="Using React JS, I pulled from an open API making both static and dynamic requests in order to create a trivia game." img="/pics/trivia.png" 
+          <InfoBox title="Trivia Game Website" subtitle="SOFTWARE ENGINEERING (JavaScript)" body="Using React JS, I pulled from an open API making both static and dynamic requests in order to create a trivia game." img="/pics/trivia.png" 
           link="https://triviaproj.vercel.app/" github="https://github.com/sydbui/triviaproj" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
           <Box height="128px" width="100%"></Box>
-          <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING" body="I worked with a team of 6 people to create an app using React Native for 1951 Coffee, a 
+          <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING (TypeScript)" body="I worked with a team of 6 people to create an app using React Native for 1951 Coffee, a 
           local Berkeley non-profit focused towards advancing the well-being of the refugee community, that allows them to better commuicate with their trainees." img="/pics/1951.jpg" 
-          link="https://apps.apple.com/us/app/1951-coffee-trainee/id1496686726"  github="https://github.com/calblueprint/1951coffee" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
+          link="https://apps.apple.com/us/app/1951-coffee-trainee/id1496686726"  github="https://github.com/calblueprint" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
           <Box height="128px" width="100%"></Box>
           <InfoBox title="RecipeBook iOS App" subtitle="PRODUCT DESIGN" body="I designed an iOS App that allows users with 
           limited cooking knowledge to easily find a variety of new recipes through user research and design." img="/pics/recipepic.png" link="/swag" check={false} placement="right"></InfoBox>

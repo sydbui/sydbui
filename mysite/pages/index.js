@@ -80,7 +80,8 @@ export default function Home() {
             <Flex marginTop="90px">
               <Text fontFamily="Inconsolata" color="#FFCC7E" fontSize={["20px", "20px", "28px", "28px"]}>
               <Link href="mailto:sydneythibui@gmail.com">Email</Link> *  <Link href="/resume.pdf" isExternal>
-              Resume</Link> * <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
+              Resume</Link> * <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link> * <Link
+               href="https://github.com/sydbui" isExternal>GitHub</Link>
               </Text>
             </Flex>
             <Box as={BsArrowDown} size={["75px", "75px", "150px", "150px"]} color="#FFCC7E"></Box>
@@ -90,7 +91,7 @@ export default function Home() {
           link="https://triviaproj.vercel.app/" github="https://github.com/sydbui/triviaproj" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
           <Box height="128px" width="100%"></Box>
           <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING (TypeScript)" body="I worked with a team of 6 people to create an app using React Native for 1951 Coffee, a 
-          local Berkeley non-profit focused towards advancing the well-being of the refugee community, that allows them to better commuicate with their trainees." img="/pics/1951.jpg" 
+          local Berkeley non-profit focused towards advancing the well-being of the refugee community, which allows them to better communicate with their trainees." img="/pics/1951.jpg" 
           link="https://apps.apple.com/us/app/1951-coffee-trainee/id1496686726"  github="https://github.com/calblueprint" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
           <Box height="128px" width="100%"></Box>
           <InfoBox title="RecipeBook iOS App" subtitle="PRODUCT DESIGN" body="I designed an iOS App that allows users with 
@@ -106,7 +107,8 @@ export default function Home() {
             <Box height="36px" width="100%"></Box>
             <Text fontFamily="Inconsolata" color="#424242" fontSize={["14px", "14px", "28px", "28px"]} fontWeight="700">
             <Link href="mailto:sydneythibui@gmail.com">Email</Link>  *   <Link href="/resume.pdf" isExternal>
-            Resume</Link>  *  <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
+            Resume</Link>  *  <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link> * <Link
+               href="https://github.com/sydbui" isExternal>GitHub</Link>
             </Text>
           </Flex>
           <Image marginLeft="4%" marginBottom="8%"rounded="full" size= {["125px", "125px", "225px", "225px"]}  src="/pics/me!.jpg" display="flex" marginTop="9%" marginRight="2%"/>

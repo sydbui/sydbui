@@ -171,7 +171,8 @@ export default function Home() {
             <Box height="36px" width="100%"></Box>
             <Text fontFamily="Inconsolata" color="#424242" fontSize={["14px", "14px", "28px", "28px"]} fontWeight="700">
             <Link href="mailto:sydneythibui@gmail.com">Email</Link>  *   <Link href="/resume.pdf" isExternal>
-            Resume</Link>  *  <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link>
+            Resume</Link>  *  <Link href="https://www.linkedin.com/in/sydney-bui/" isExternal>LinkedIn</Link> * <Link
+               href="https://github.com/sydbui" isExternal>GitHub</Link>
             </Text>
           </Flex>
           <Image marginLeft="4%" marginBottom="8%"rounded="full" size= {["125px", "125px", "225px", "225px"]}  src="/pics/me!.jpg" display="flex" marginTop="9%" marginRight="2%"/>

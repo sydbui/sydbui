@@ -91,7 +91,7 @@ export default function Home() {
           <InfoBox title="Trivia Game Website" subtitle="SOFTWARE ENGINEERING (JavaScript)" body="Using React JS, I pulled from an open API making both static and dynamic requests in order to create a trivia game." img="/pics/trivia.png" 
           link="https://triviaproj.vercel.app/" github="https://github.com/sydbui/triviaproj" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
           <Box height="128px" width="100%"></Box>
-          <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING (TypeScript)" body="I worked with a team of 6 people to create develop a full-stack mobile app with React Native 
+          <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING (TypeScript)" body="I worked with a team of 6 people to develop a full-stack mobile app with React Native 
           for 1951 Coffee Company, a Berkeley non-profit empowering refugees, to streamline its refugee barista program. I built intuitive front-end features and React components with Typescript and CSS." img="/pics/1951.jpg" 
           link="https://apps.apple.com/us/app/1951-coffee-trainee/id1496686726"  github="https://github.com/calblueprint" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
           <Box height="128px" width="100%"></Box>

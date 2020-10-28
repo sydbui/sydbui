@@ -67,14 +67,13 @@ export default function Home() {
               Her work is geared towards <Popover trigger="hover" placement="left-end">
                 <PopoverTrigger>
                   <Text fontFamily="Zilla Slab" color="#EBC1FF" as="u">
-                    <Link href="https://calblueprint.org/" isExternal>building a better world.</Link>
+                    <Link href="https://calblueprint.org/" isExternal>building a better world. </Link>
                   </Text>
                 </PopoverTrigger>
                 <PopoverContent backgroundColor="transparent" border="0px">
                   <Image src="/pics/blueprint.JPEG" alt="cool image"/>
                 </PopoverContent>
-              </Popover> 
-              She's passionate about improving inequality in education and bridging the gender gap within the tech industry. 
+              </Popover> She's passionate about improving inequality in education and bridging the gender gap within the tech industry. 
               She also enjoys <Popover trigger="hover" placement="right-start">
                 <PopoverTrigger>
                   <Text fontFamily="Zilla Slab" color="#EBC1FF" as="u">

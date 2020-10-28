@@ -82,7 +82,7 @@ export default function Home() {
                   </Text>
                 </PopoverTrigger>
                 <PopoverContent backgroundColor="transparent" border="0px">
-                    <Image src="/pics/appa.jpg" alt=""/>
+                    <Image src="/pics/appa.JPG" alt=""/>
                 </PopoverContent>
               </Popover>
             </Heading>

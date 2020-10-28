@@ -73,8 +73,18 @@ export default function Home() {
                 <PopoverContent backgroundColor="transparent" border="0px">
                   <Image src="/pics/blueprint.JPEG" alt="cool image"/>
                 </PopoverContent>
-              </Popover> She's passionate about improving inequality in education and bridging the gender gap within the tech industry. 
-              She also enjoys embroidering.
+              </Popover> 
+              She's passionate about improving inequality in education and bridging the gender gap within the tech industry. 
+              She also enjoys <Popover trigger="hover" placement="right-start">
+                <PopoverTrigger>
+                  <Text fontFamily="Zilla Slab" color="#EBC1FF" as="u">
+                    <Link href="/embroidery">embroidery.</Link>
+                  </Text>
+                </PopoverTrigger>
+                <PopoverContent backgroundColor="transparent" border="0px">
+                    <Image src="/pics/appa.jpg" alt=""/>
+                </PopoverContent>
+              </Popover>
             </Heading>
           </Flex>
           <Flex justifyContent="space-between" width="100%">
@@ -88,12 +98,12 @@ export default function Home() {
             <Box as={BsArrowDown} size={["75px", "75px", "150px", "150px"]} color="#FFCC7E" marginTop="5%"></Box>
           </Flex>
           <Box height="192px" width="100%"></Box>
-          <InfoBox title="Trivia Game Website" subtitle="SOFTWARE ENGINEERING (JavaScript)" body="Using React JS, I pulled from an open API making both static and dynamic requests in order to create a trivia game." img="/pics/trivia.png" 
-          link="https://triviaproj.vercel.app/" github="https://github.com/sydbui/triviaproj" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
-          <Box height="128px" width="100%"></Box>
           <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING (TypeScript)" body="I worked with a team of 6 people to develop a full-stack mobile app with React Native 
           for 1951 Coffee Company, a Berkeley non-profit empowering refugees, to streamline its refugee barista program. I built intuitive front-end features and React components with Typescript and CSS." img="/pics/1951.jpg" 
           link="https://apps.apple.com/us/app/1951-coffee-trainee/id1496686726"  github="https://github.com/calblueprint" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
+          <Box height="128px" width="100%"></Box>
+          <InfoBox title="Trivia Game Website" subtitle="SOFTWARE ENGINEERING (JavaScript)" body="Using React JS, I pulled from an open API making both static and dynamic requests in order to create a trivia game." img="/pics/trivia.png" 
+          link="https://triviaproj.vercel.app/" github="https://github.com/sydbui/triviaproj" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
           <Box height="128px" width="100%"></Box>
           <InfoBox title="RecipeBook iOS App" subtitle="PRODUCT DESIGN" body="I designed an iOS App that allows users with 
           limited cooking knowledge to easily find a variety of new recipes through user research and design." img="/pics/recipepic.png" link="/swag" check={false} placement="right"></InfoBox>

@@ -54,19 +54,19 @@ export default function Home() {
           <Box width="100%" height="30px"></Box>
           <styles.Title text="Avatar the Last Airbender Jeans"></styles.Title>
           <SimpleGrid columns={4} spacingX="40px" spacingY="20px" marginTop="3%">
-            <Image src="/pics/fullbod.jpg"></Image>
-            <Image src="/pics/elements.jpg" ></Image>
-            <Image src="/pics/elements2.jpg" ></Image>
-            <Image src="/pics/fan.jpg"></Image>
+            <Image src="/pics/fullbod.JPG"></Image>
+            <Image src="/pics/elements.JPG" ></Image>
+            <Image src="/pics/elements2.JPG" ></Image>
+            <Image src="/pics/fan.JPG"></Image>
           </SimpleGrid>
           <Box width="100%" height="30px"></Box>
           <Flex justifyContent="center">
-            <Image src="/pics/appa.jpg" width="60%"></Image>
+            <Image src="/pics/appa.JPG" width="60%"></Image>
           </Flex>
           <Box width="100%" height="100px"></Box>
           <styles.Title text="Chi Chai Monchon Sweater"></styles.Title>
           <Flex justifyContent="center" marginTop="3%">
-            <Image src="/pics/chichai.jpg" width="80%"></Image>
+            <Image src="/pics/chichai.JPG" width="80%"></Image>
           </Flex>
           <Box height="100px" width="100%"></Box>
           <Link href="/">

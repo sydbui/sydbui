@@ -61,12 +61,12 @@ export default function Home() {
           </SimpleGrid>
           <Box width="100%" height="30px"></Box>
           <Flex justifyContent="center">
-            <Image src="/pics/appa.JPG" width="60%"></Image>
+            <Image src="/pics/appa.JPG" width="60%" height="auto"></Image>
           </Flex>
           <Box width="100%" height="100px"></Box>
           <styles.Title text="Chi Chai Monchon Sweater"></styles.Title>
           <Flex justifyContent="center" marginTop="3%">
-            <Image src="/pics/chichai.JPG" width="80%"></Image>
+            <Image src="/pics/chichai.JPG" width="80%" height="auto"></Image>
           </Flex>
           <Box height="100px" width="100%"></Box>
           <Link href="/">

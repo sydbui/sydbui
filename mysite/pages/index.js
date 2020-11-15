@@ -1,24 +1,16 @@
 import Head from 'next/head';
-import NextLink from 'next/link';
 import { 
   ThemeProvider, 
   CSSReset, 
   Flex, 
   Box, 
   Link, 
-  Button, 
-  Icon, 
-  ButtonGroup,   
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
   Image,
   Text,
   Heading,
 } from "@chakra-ui/core";
 import {BsArrowDown} from "react-icons/bs";
 import InfoBox from '../components/infobox';
-import HoverText from '../components/hoverfunc';
 import * as styles from '../components/customtext';
 import { useState, View } from 'react';
 

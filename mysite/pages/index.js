@@ -20,6 +20,7 @@ import {BsArrowDown} from "react-icons/bs";
 import InfoBox from '../components/infobox';
 import HoverText from '../components/hoverfunc';
 import * as styles from '../components/customtext';
+import { useState, View } from 'react';
 
 const config = theme => ({
   light: {
@@ -38,6 +39,22 @@ const config = theme => ({
 
 
 export default function Home() {
+
+  const [profile, setProfile] = useState(null);
+  const [club, setClub] = useState(null);
+  const [embroidery, setEmbroidery] = useState(null);
+
+  function popUp(image, margin) {
+    const ref = "/pics/" + image;
+    if (image) {
+      return (
+        <div style={{position: 'absolute'}}>
+          <Image src={ref} marginLeft={margin} width="28%" />
+        </div>
+      )
+    }
+  }
+
   return (
     <div className="container">
       <Head>
@@ -56,34 +73,22 @@ export default function Home() {
           <Box width="100%"></Box>
           <Flex>
             <Heading fontFamily="Zilla Slab" fontSize={["32px", "32px", "48px","48px"]} fontWeight="regular" lineHeight="160%">
-              <Popover trigger="hover" placement="right-start">
-                <PopoverTrigger>
-                <Text fontFamily="Zilla Slab" as="u">Sydney Bui</Text>
-                </PopoverTrigger>
-                <PopoverContent backgroundColor="transparent" border="0px">
-                    <Image src="/pics/kribz.jpg" alt="Me!" />
-                </PopoverContent>
-              </Popover> is a software developer, designer, and student at UC Berkeley. 
-              Her work is geared towards <Popover trigger="hover" placement="left-end">
-                <PopoverTrigger>
-                  <Text fontFamily="Zilla Slab" color="#EBC1FF" as="u">
-                    <Link href="https://calblueprint.org/" isExternal>building a better world. </Link>
-                  </Text>
-                </PopoverTrigger>
-                <PopoverContent backgroundColor="transparent" border="0px">
-                  <Image src="/pics/blueprint.JPEG" alt="cool image"/>
-                </PopoverContent>
-              </Popover> She's passionate about improving inequality in education and bridging the gender gap within the tech industry. 
-              She also enjoys <Popover trigger="hover" placement="right-start">
-                <PopoverTrigger>
-                  <Text fontFamily="Zilla Slab" color="#EBC1FF" as="u">
-                    <Link href="/embroidery">embroidery.</Link>
-                  </Text>
-                </PopoverTrigger>
-                <PopoverContent backgroundColor="transparent" border="0px">
-                    <Image src="/pics/appa.JPG" alt=""/>
-                </PopoverContent>
-              </Popover>
+              <Text as="u" fontFamily="Zilla Slab" onMouseEnter={()=>setProfile("kribz.jpg")} onMouseLeave={()=>setProfile(null)}>
+                Sydney Bui
+                {popUp(profile, "18%")}
+              </Text>  is a software developer, designer, and student at UC Berkeley. Her work is geared 
+              towards <Text as="u" fontFamily="Zilla Slab" onMouseEnter={()=>setClub("blueprint.JPEG")} onMouseLeave={()=>setClub(null)}>
+               {popUp(club, "50%")}
+                <Link href="https://calblueprint.org/" isExternal>
+                building a better world.
+                </Link>
+              </Text> She's passionate about improving inequality in education and bridging the gender gap within the tech 
+              industry. She also enjoys <Text  as="u" fontFamily="Zilla Slab" onMouseEnter={()=>setEmbroidery("appa.JPG")} onMouseLeave={()=>setEmbroidery(null)}>
+                <Link href="/embroidery">
+                embroidery.
+                {popUp(embroidery, "35%")}
+                </Link>
+              </Text>
             </Heading>
           </Flex>
           <Flex justifyContent="space-between" width="100%">
@@ -97,6 +102,11 @@ export default function Home() {
             <Box as={BsArrowDown} size={["75px", "75px", "150px", "150px"]} color="#FFCC7E" marginTop="5%"></Box>
           </Flex>
           <Box height="192px" width="100%"></Box>
+          <InfoBox title="OGSC Student Portal" subtitle="SOFTWARE ENGINEERING (TypeScript)" body="I am currently working as a full-stack developer for Oakland
+          Genesis Soccer Club (OGSC) through Blueprint (student organization) to create a student portal for its participants. So far, I've
+          created API endpoints as well as complex front-end features using Prisma and React." img="" 
+          link="https://www.oaklandgenesis.org/"  github="https://github.com/calblueprint/ogsc" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
+          <Box height="128px" width="100%"></Box>
           <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING (TypeScript)" body="I worked with a team of 6 people to develop a full-stack mobile app with React Native 
           for 1951 Coffee Company, a Berkeley non-profit empowering refugees, to streamline its refugee barista program. I built intuitive front-end features and React components with Typescript and CSS." img="/pics/1951.jpg" 
           link="https://apps.apple.com/us/app/1951-coffee-trainee/id1496686726"  github="https://github.com/calblueprint" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>

@@ -37,13 +37,6 @@ export default function HoverText(props) {
     </Link>;
   const linker = props.check ? external : internal;
   return <div>
-  <Popover trigger="hover" placement={props.placement}>
-    <PopoverTrigger>
-      {linker} 
-    </PopoverTrigger>
-    <PopoverContent backgroundColor="transparent" border="0px">
-      <Image src={props.img} alt="cool image"/>
-    </PopoverContent>
-    </Popover>
+    {linker} 
   </div>
 }

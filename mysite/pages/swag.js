@@ -167,7 +167,7 @@ export default function Home() {
             <styles.Title color="#424242" text="Want to work with me?"></styles.Title>
             <Box height="36px" width="100%"></Box>
             <styles.Subtitle color="#424242" text="I am actively looking for internships and ready 
-            to start summer 2021. If you’d like to talk to me over a game of sudoku, get in touch!"></styles.Subtitle>
+            to start summer 2022. If you’d like to talk to me over a game of sudoku, get in touch!"></styles.Subtitle>
             <Box height="36px" width="100%"></Box>
             <Text fontFamily="Inconsolata" color="#424242" fontSize={["14px", "14px", "28px", "28px"]} fontWeight="700">
             <Link href="mailto:sydneythibui@gmail.com">Email</Link>  *   <Link href="/resume.pdf" isExternal>

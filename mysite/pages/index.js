@@ -94,10 +94,16 @@ export default function Home() {
             <Box as={BsArrowDown} size={["75px", "75px", "150px", "150px"]} color="#FFCC7E" marginTop="5%"></Box>
           </Flex>
           <Box height="192px" width="100%"></Box>
-          <InfoBox title="OGSC Student Portal" subtitle="SOFTWARE ENGINEERING (TypeScript)" body="I am currently working as a full-stack developer for Oakland
-          Genesis Soccer Club (OGSC) through Blueprint (student organization) to create a student portal for its participants. So far, I've
-          created API endpoints as well as complex front-end features using Prisma and React." img="" 
-          link="https://www.oaklandgenesis.org/"  github="https://github.com/calblueprint/ogsc" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
+          <InfoBox title="Software Engineer Intern, Strava" subtitle="SOFTWARE ENGINEERING (TypeScript)" body="I worked as an intern to create an admin
+          facing tool that allows admin to see all of the beacons for any specific athlete. I built out a complext microfrontend and prototyped new technologies 
+          along with it such as react-router and GraphQL." img="" 
+          link="https://www.strava.com/"  check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
+          <Box height="128px" width="100%"></Box>
+          <InfoBox title="OGSC Student Portal" subtitle="SOFTWARE ENGINEERING (TypeScript)" body="I worked as a full-stack developer for Oakland
+          Genesis Soccer Club (OGSC) through Blueprint (student organization) to create a student portal for its participants. This allows admin 
+          to track participant progress as well as input new data -- participants are also able to view there own profile and 
+          edit selected sections. This was built using React for the frontend and Prisma for the backend." img="" 
+          link="https://youth.oaklandgenesis.org/"  github="https://github.com/calblueprint/ogsc" check={true}  font="Inconsolata" size="28px" color="#FFCC7E" placement="top"></InfoBox>
           <Box height="128px" width="100%"></Box>
           <InfoBox title="1951 Coffee Trainee App" subtitle="SOFTWARE ENGINEERING (TypeScript)" body="I worked with a team of 6 people to develop a full-stack mobile app with React Native 
           for 1951 Coffee Company, a Berkeley non-profit empowering refugees, to streamline its refugee barista program. I built intuitive front-end features and React components with Typescript and CSS." img="/pics/1951.jpg" 
@@ -115,7 +121,7 @@ export default function Home() {
             <styles.Title color="#424242" text="Want to work with me?"></styles.Title>
             <Box height="36px" width="100%"></Box>
             <styles.Subtitle color="#424242" text="I am actively looking for internships and ready 
-            to start summer 2021. If you’d like to talk to me over a game of sudoku, get in touch!"></styles.Subtitle>
+            to start summer 2022. If you’d like to talk to me over a game of sudoku, get in touch!"></styles.Subtitle>
             <Box height="36px" width="100%"></Box>
             <Text fontFamily="Inconsolata" color="#424242" fontSize={["14px", "14px", "28px", "28px"]} fontWeight="700">
             <Link href="mailto:sydneythibui@gmail.com">Email</Link>  *   <Link href="/resume.pdf" isExternal>

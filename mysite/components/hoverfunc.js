@@ -23,11 +23,11 @@ export default function HoverText(props) {
       </Button>
     </Link>
     <Box width="5%"></Box>
-    <Link href={props.github} isExternal>
+    {props.github ? <Link href={props.github} isExternal>
       <Button variant="link" rightIcon={MdArrowForward} fontSize={["14px", "14px", "28px", "28px"]} fontFamily="Inconsolata" color= "#FFCC7E">
         GitHub
       </Button>
-    </Link>
+    </Link> : null}
     </Flex>;
   const internal = 
     <Link href={props.link}>
